@@ -1,0 +1,5 @@
+---
+---
+{% assign hidden_pages = site.pages | where_exp: "page","page.robots == 'noindex'" %}User-agent: *{% for page in hidden_pages %}
+Disallow: {{ page.url }}{% endfor %}
+Sitemap: {{ site.url }}/sitemap.xml
