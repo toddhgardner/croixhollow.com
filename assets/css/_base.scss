@@ -1,4 +1,44 @@
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  max-width: $desktop-width;
+  min-width: $min-width;
 
-body {
-  background-color: red;
+  @media (max-width: $laptop-width) {
+    max-width: $laptop-width;
+  }
+  @media (max-width: $tablet-width) {
+    max-width: $tablet-width;
+  }
+  @media (max-width: $mobile-width) {
+    max-width: $mobile-width;
+  }
+}
+
+.relative {
+  position: relative;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.text-center {
+  text-align: center;
+}
+.text-width {
+  max-width: $max-text-width;
 }

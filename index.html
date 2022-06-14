@@ -7,4 +7,22 @@ sitemap:
   priority: 1.0
 ---
 
-<h1>Hey</h1>
+<section class="hero">
+  <div class="container">
+
+    <form id="js-booking-control" action="https://www.airbnb.com/rooms/50934412" method="GET">
+      <label>
+        <span>Check In</span>
+        <input type="date" name="check_in" value="" min="" max="" required />
+      </label>
+      <label>
+        <span>Check Out</span>
+        <input type="date" name="check_out" value="" min="" max="" required />
+      </label>
+      <input type="hidden" name="adults" value="2" />
+      <input type="hidden" name="children" value="0" />
+      <button type="submit">Book Now</button>
+    </form>
+
+  </div>
+</section>
