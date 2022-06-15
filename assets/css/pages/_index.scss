@@ -1,0 +1,72 @@
+body.index {
+
+  // defaults so that parallax works at the section level
+  main {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+  }
+  section {
+    transform-style: preserve-3d;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #111;
+    z-index: 999;
+  }
+
+  section.hero {
+    background-color: transparent;
+    z-index: inherit;
+    height: 540px;
+
+    h1 {
+      text-align: center;
+      font-size: 4rem;
+      font-family: sans-serif;
+      width: 60%;
+      font-size: 2rem;
+    }
+
+    &::after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform: translateZ(-1px) scale(1.5);
+      background-size: 100%;
+      z-index: -1;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/hero.jpg");
+      background-size: cover;
+      background-position: center, center;
+    }
+  }
+
+
+  @media screen and (min-width: 768px) {
+    section h1 {
+      font-size: 8rem;
+    }
+    .parallax h1 {
+      font-size: 4rem;
+    }
+  }
+
+
+  section.hero {
+
+
+
+
+
+
+  }
+
+}
+
