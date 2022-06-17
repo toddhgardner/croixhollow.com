@@ -9,34 +9,33 @@ sitemap:
 
 <section class="hero">
   <div class="container">
+    <img src="/assets/images/logo-illustration.svg" alt="Croix Hollow" class="logo-illustration" height="120" width="300" />
+    <h1 class="logo">{{ site.title }}</h1>
+    <h2 class="description">{{ site.description }}</h2>
+  </div>
+</section>
 
-    <img src="" alt="Croix Hollow" class="logo" height="" width="" />
-    <h1>Croix Hollow</h1>
-    <h2>
-
-    </h2>
-
-
-
+<section class="booking">
+  <div class="container">
+    <form id="js-booking-control" action="https://www.airbnb.com/rooms/50934412" method="GET" class="flex">
+      <label class="flex-column">
+        <span>Check In</span>
+        <input type="date" name="check_in" value="" min="" max="" required />
+      </label>
+      <label class="flex-column">
+        <span>Check Out</span>
+        <input type="date" name="check_out" value="" min="" max="" required />
+      </label>
+      <input type="hidden" name="adults" value="2" />
+      <input type="hidden" name="children" value="0" />
+      <button type="submit">Book Now</button>
+    </form>
   </div>
 </section>
 
 
 
 
-<form id="js-booking-control" action="https://www.airbnb.com/rooms/50934412" method="GET">
-  <label>
-    <span>Check In</span>
-    <input type="date" name="check_in" value="" min="" max="" required />
-  </label>
-  <label>
-    <span>Check Out</span>
-    <input type="date" name="check_out" value="" min="" max="" required />
-  </label>
-  <input type="hidden" name="adults" value="2" />
-  <input type="hidden" name="children" value="0" />
-  <button type="submit">Book Now</button>
-</form>
 
 <section class="no-parallax">
   <h1>Fun fact:</h1>

@@ -8,6 +8,8 @@
   {% if page.robots == 'noindex' %}<meta name="robots" content="noindex">{% endif %}
 
 
+  <!-- Preloading -->
+  <link rel="preload" href="/assets/fonts/wilderness-bold.woff2" as="font" type="font/woff2" crossorigin>
 
   <link rel="stylesheet" href="/assets/css/main.css{% if jekyll.environment == 'production' %}?{{ site.time | date: "%s%N" }}{% endif %}">
 </head>
