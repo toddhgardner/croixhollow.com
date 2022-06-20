@@ -14,14 +14,10 @@ body.index {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    background-color: #111;
     z-index: 999;
   }
 
   section.hero {
-    // margin-top: -100px;
-    // padding: 100px 0;
 
     .container {
       padding-top: 100px;
@@ -41,13 +37,13 @@ body.index {
       transform: translateZ(-1px) scale(1.5);
       background-size: 100%;
       z-index: -1;
-      background-image: linear-gradient(rgba(17, 17, 17, 0.5), rgba(17, 17, 17, 1)), url("/assets/images/hero.jpg");
+      background-image: linear-gradient(rgba($dark-grey, 0.5), rgba($dark-grey, 0.8), $dark-grey, $dark-grey), url("/assets/images/hero.jpg");
       background-size: cover;
       background-position: center, center;
     }
 
     .logo-illustration {
-      background-image: radial-gradient(rgba(17,17,17,.8), rgba(17,17,17,0.6), transparent, transparent);
+      background-image: radial-gradient(rgba($dark-grey,.8), rgba($dark-grey,0.6), transparent, transparent);
       max-width: 580px;
       width: 100%;
       height: auto;
@@ -64,6 +60,7 @@ body.index {
       letter-spacing: -.3rem;
       text-align: center;
       font-size: 5rem;
+      color: white;
       @media (max-width: 600px) {
         font-size: 13vw;
       }
@@ -72,14 +69,54 @@ body.index {
     h2.description {
       max-width: $max-text-width;
       text-align: center;
-      font-family: arial;
-      font-weight: normal;
+      font-weight: 100;
+      color: $cream;
       font-size: 1.6rem;
       margin: 0;
     }
   }
 
+  section.booking {
+    padding: 30px 0;
+    background-color: $dark-grey;
 
+    label {
+      margin-right: 10px;
+      span {
+        color: darken($stone, 10%);
+        font-size: 0.8em;
+      }
+    }
+    input[type=date] {
+      font-size: 1.6em;
+      font-weight: 100;
+      padding: 6px 12px;
+      border-radius: 6px;
+      border: none;
+      background-color: $stone;
+    }
+    button[type=submit] {
+      margin-top: 14px;
+      border-radius: 6px;
+      border: none;
+      padding: 8px 24px;
+      font-size: 1.4em;
+      background-color: $green;
+      color: $stone;
+      cursor: pointer;
+    }
+
+    @media(max-width: 610px) {
+      form {
+        flex-direction: column;
+        width: 100%;
+        & > * {
+          margin: 0 20px 10px;
+
+        }
+      }
+    }
+  }
 
   section.hero {
 

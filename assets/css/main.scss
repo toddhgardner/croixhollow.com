@@ -6,6 +6,18 @@
 $base-font-family:      "Helvetica", "Arial", sans-serif;
 $logo-font-family:      "Wilderness", sans-serif;
 
+// Colors, Hygge pallette
+// https://theimageshoppe.com/media/files/blog/TIS0219web_HyggeGraphics_Colors.jpg
+$dark-grey:             darken(#37383a, 12%);
+$grey:                #37383a;
+$green:               #7b927f;
+$blue:                #627c8c;
+$orange:              #dea87f;
+$pink:                #dccdcf;
+$khaki:               #c3b7aa;
+$cream:               #f0e9e9;
+$stone:               #e5e8e7;
+
 // Sizes
 $desktop-width:         1200px;
 $laptop-width:          900px;
