@@ -88,6 +88,9 @@ body.index {
       }
     }
     input[type=date] {
+      -webkit-appearance: textfield;
+      -moz-appearance: textfield;
+
       font-size: 1.4em;
       font-weight: 100;
       text-align: center;
