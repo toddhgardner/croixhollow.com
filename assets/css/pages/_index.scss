@@ -20,8 +20,13 @@ body.index {
   }
 
   section.hero {
-    margin-top: -45px;
-    padding: 100px 0;
+    // margin-top: -100px;
+    // padding: 100px 0;
+
+    .container {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
 
     // Parallax
     background-color: transparent;
@@ -29,7 +34,7 @@ body.index {
     &::after {
       content: " ";
       position: absolute;
-      top: 0;
+      top: -12vh;
       right: 0;
       bottom: 0;
       left: 0;
@@ -46,6 +51,10 @@ body.index {
       max-width: 580px;
       width: 100%;
       height: auto;
+
+      @media (max-width: 600px) {
+        max-width: 100%;
+      }
     }
 
     h1.logo {
@@ -71,15 +80,6 @@ body.index {
   }
 
 
-  @media screen and (min-width: 768px) {
-    section h1 {
-      font-size: 8rem;
-    }
-    .parallax h1 {
-      font-size: 4rem;
-    }
-  }
-
 
   section.hero {
 
@@ -88,6 +88,10 @@ body.index {
 
 
 
+  }
+
+  .filler {
+    height: 500px;
   }
 
 }
