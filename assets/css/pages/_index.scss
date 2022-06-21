@@ -123,13 +123,36 @@ body.index {
     }
   }
 
-  section.hero {
+  section.photos {
+    padding: 60px 0;
+    background-color: $dark-grey;
 
-
-
-
-
-
+    .photos {
+      padding: 20px;
+    }
+    .photo {
+      display: block;
+      padding: 5px;
+      img {
+        border-radius: 6px;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    .more {
+      font-size: 1.4em;
+      text-decoration: none;
+      color: lighten($blue, 40%);
+    }
+    @media(max-width: 800px) {
+      .photos {
+        flex-wrap: wrap;
+        padding: 0;
+        .photo {
+          flex: 0 1 calc(50% - 10px);
+        }
+      }
+    }
   }
 
   .filler {
