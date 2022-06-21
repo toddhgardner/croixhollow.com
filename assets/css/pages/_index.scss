@@ -124,7 +124,7 @@ body.index {
   }
 
   section.photos {
-    padding: 60px 0;
+    padding: 60px 0 0;
     background-color: $dark-grey;
 
     .photos {
@@ -152,6 +152,15 @@ body.index {
           flex: 0 1 calc(50% - 10px);
         }
       }
+    }
+  }
+
+  section.decor-banner {
+    background-color: $dark-grey;
+    .container { padding: 0; }
+    img {
+      width: 100%;
+      height: auto;
     }
   }
 
