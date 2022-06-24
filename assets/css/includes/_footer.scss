@@ -1,0 +1,86 @@
+footer.site-footer {
+  .container {
+    max-width: 980px;
+  }
+
+  .links {
+    width: 100%;
+    justify-content: space-between;
+
+    @media(max-width: 920px) {
+      flex-direction: column;
+      align-items: center;
+
+      .footer-logo {
+        margin-bottom: 30px;
+      }
+      .links-right {
+        margin-bottom: 30px;
+        .booking-links {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .footer-logo {
+    color: $stone;
+    text-decoration: none;
+    .illustration {
+      width: 180px;
+    }
+    h2 {
+      font-size: 2.4em;
+      margin: 0 0 0 5px;
+      line-height: 1em;
+    }
+  }
+
+  .links-right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .booking-links {
+    align-items: center;
+    & > a {
+      padding: 0 20px;
+      img {
+        filter: grayscale(1) brightness(1.5);
+        height: 48px;
+        width: auto;
+        transition: filter 200ms ease-in-out;
+      }
+      &:hover,&:active,&:focus {
+        img {
+          filter: grayscale(1) brightness(2);
+        }
+      }
+    }
+  }
+
+  .social-links {
+    align-items: center;
+    & > a {
+      padding: 0 5px;
+      i {
+        color: darken($stone, 10%);
+        font-size: 2em;
+        transition: color 200ms ease-in-out;
+      }
+      &:hover,&:active,&:focus {
+        i {
+          color: $stone;
+        }
+      }
+    }
+
+  }
+
+  .copyright {
+    max-width: $max-text-width;
+    text-align: center;
+    font-size: 0.9em;
+  }
+
+}

@@ -18,6 +18,8 @@ $khaki:               #c3b7aa;
 $cream:               #f0e9e9;
 $stone:               #e5e8e7;
 
+$text-color:          $dark-grey;
+
 // Sizes
 $desktop-width:         1200px;
 $laptop-width:          900px;
@@ -28,5 +30,8 @@ $max-text-width:        700px;
 
 @import "_normalize";
 @import "_fonts";
+@import "_forms";
 @import "_base";
+@import "includes/_footer";
 @import "pages/_index";
+@import "pages/_message";

@@ -1,0 +1,67 @@
+input[type=text],
+input[type=date],
+input[type=email] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+
+  font-size: 1.4em;
+  font-weight: 100;
+  text-align: center;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: $stone;
+  color: $dark-grey;
+}
+
+.btn {
+  font-family: $base-font-family;
+  font-weight: 100;
+  border-radius: 6px;
+  border: 1px solid $stone;
+  color: $stone;
+  background-color: $dark-grey;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 8px 24px;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  transition: background-color 200ms ease-in-out;
+
+  &:active, &:hover, &:focus {
+    text-decoration: none;
+    background-color: lighten($dark-grey, 10%);
+  }
+
+  &.btn-green {
+    background-color: $green;
+    border: none;
+    color: $stone;
+    &:active, &:hover, &:focus {
+      text-decoration: none;
+      background-color: darken($green, 10%);
+    }
+  }
+
+  // &.btn-grey {
+  //   border: 1px solid $text-color-subtle;
+  //   background-color: $background-color;
+  //   color: $text-color;
+
+  //   &:active, &:hover, &:focus {
+  //     background-color: darken($background-color, 12%);
+  //   }
+  // }
+
+  // &.btn-green {
+  //   background-color: $primary-green;
+  //   color: white;
+
+  //   &:active, &:hover, &:focus {
+  //     background-color: darken($primary-green, 12%);
+  //   }
+  // }
+}
+

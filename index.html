@@ -17,7 +17,7 @@ sitemap:
 
 <section class="booking">
   <div class="container">
-    <form id="js-booking-control" action="https://www.airbnb.com/rooms/50934412" method="GET" class="flex">
+    <form id="js-booking-control" action="{{ site.airbnb_url }}" method="GET" class="flex">
       <label class="flex-column">
         <span>Check In</span>
         <input type="date" name="check_in" value="" min="" max="" required />
@@ -28,7 +28,7 @@ sitemap:
       </label>
       <input type="hidden" name="adults" value="2" />
       <input type="hidden" name="children" value="0" />
-      <button type="submit">Book Now</button>
+      <button class="btn btn-green" type="submit">Book Now</button>
     </form>
   </div>
 </section>
@@ -57,18 +57,25 @@ sitemap:
         <img data-src="/assets/images/newsletter.svg" alt="Mail coming out of the forest" loading="lazy" height="150" width="214" />
       </div>
 
-      <form action="https://croixhollow.us11.list-manage.com/subscribe/post?u=e78e3066ff9bd224ab4ddfac4&amp;id=6e5a192fe4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
-        <p>
+      <form class="flex-column" action="https://croixhollow.us11.list-manage.com/subscribe/post?u=e78e3066ff9bd224ab4ddfac4&amp;id=6e5a192fe4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
+        <p class="text-center">
           Sign up to get booking notifications, calendar releases, and last-minute discounts!
         </p>
-        <input type="text" name="NAME" id="mce-NAME" placeholder="Sven" required />
-        <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="sven@gmail.com" required />
+        <label class="flex-column">
+          <span>Name</span>
+          <input type="text" name="NAME" id="mce-NAME" placeholder="Sven" required />
+        </label>
+        <label class="flex-column">
+          <span>Email</span>
+          <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="sven@gmail.com" required />
+        </label>
+
         <input type="hidden" name="tags" value="9176435" />
         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
         <div style="position: absolute; left: -5000px;" aria-hidden="true">
           <input type="text" name="b_e78e3066ff9bd224ab4ddfac4_6e5a192fe4" tabindex="-1" value="">
         </div>
-        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-big btn-green">
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-green">
       </form>
     </div>
 
@@ -101,9 +108,3 @@ sitemap:
     <img data-src="/assets/images/decor-banner.svg" loading="lazy" alt="" width="300" height="88" />
   </div>
 </section>
-
-<section class="filler"></section>
-<section class="filler"></section>
-<section class="filler"></section>
-<section class="filler"></section>
-<section class="filler"></section>

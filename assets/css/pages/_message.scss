@@ -1,0 +1,51 @@
+body.message {
+
+  background-image: linear-gradient($grey, $dark-grey);
+  color: $stone;
+
+  section.message {
+    padding: 100px 0;
+
+    .illustration {
+      max-width: 400px;
+      width: 100%;
+    }
+
+    h1 {
+      margin: 10px 0;
+      text-align: center;
+      font-size: 3rem;
+    }
+
+    p {
+      max-width: $max-text-width;
+      font-size: 1.6em;
+      font-weight: 100;
+      text-align: center;
+    }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 40px auto;
+      padding: 5px;
+      > * {
+        flex: 0 0 50%;
+        margin: 5px;
+      }
+      a {
+        font-size: 1.2em;
+      }
+
+      @media(max-width: $mobile-width) {
+        flex-direction: column;
+        > *, button {
+          flex: 0 0 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+}

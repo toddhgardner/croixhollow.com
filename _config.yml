@@ -27,6 +27,13 @@ image: ""
 baseurl: ""
 url: "https://croixhollow.com/"
 
+airbnb_url: https://www.airbnb.com/rooms/50934412
+vrbo_url: https://www.vrbo.com/2675571
+
+instagram: CroixHollow
+facebook: CroixHollow
+twitter: CroixHollow
+
 markdown: kramdown
 
 sass:

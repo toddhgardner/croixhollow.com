@@ -1,6 +1,14 @@
 html, body {
   font-family: $base-font-family;
+  font-weight: 100;
+  font-size: 18px;
   letter-spacing: -.05em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $logo-font-family;
+  font-weight: bold;
+  letter-spacing: -.3rem;
 }
 
 img {
