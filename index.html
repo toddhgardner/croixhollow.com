@@ -125,4 +125,18 @@ sitemap:
   </div>
 </section>
 
-
+<!-- Structured Data -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}{{ site.logo }}",
+      "height": "1000",
+      "width": "1000"
+    }
+  }
+</script
