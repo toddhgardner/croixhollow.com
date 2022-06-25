@@ -5,8 +5,34 @@
   <meta name="version" content="{{ site.time | date: '%s%N' }}">
   <meta name="git_commit" content="{{ site.github.build_revision }}">
 
+  <title>{{ page.title }} | {{ page.excerpt | truncate: 180 }}</title>
+  <meta name="description" content="{{ page.excerpt | truncate: 180 }}">
   {% if page.robots == 'noindex' %}<meta name="robots" content="noindex">{% endif %}
 
+  <!-- Facebook Meta -->
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:site_name" content="{{ site.title }}"/>
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:description" content="{{ page.excerpt }}" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="{{ site.url }}{{ site.image }}" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{ page.excerpt }}">
+  <meta name="twitter:site" content="@{{ site.twitter }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ site.url }}{{ site.image }}" />
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
   <!-- Preloading -->
   <link rel="preload" href="/assets/fonts/wilderness-bold.woff2" as="font" type="font/woff2" crossorigin>
