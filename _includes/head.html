@@ -1,26 +1,28 @@
 <head>
+  {% capture description %}{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | escape | truncate: 160 }}{% else %}{{ site.description | strip_html | strip_newlines | escape | truncate: 160 }}{% endif %}{% endcapture %}
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="version" content="{{ site.time | date: '%s%N' }}">
   <meta name="git_commit" content="{{ site.github.build_revision }}">
 
-  <title>{{ page.title }} | {{ page.excerpt | truncate: 180 }}</title>
-  <meta name="description" content="{{ page.excerpt | truncate: 180 }}">
+  <title>{{ page.title }} | {{ description }}</title>
+  <meta name="description" content="{{ description }}">
   {% if page.robots == 'noindex' %}<meta name="robots" content="noindex">{% endif %}
 
   <!-- Facebook Meta -->
   <meta property="og:title" content="{{ page.title }}" />
   <meta property="og:site_name" content="{{ site.title }}"/>
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-  <meta property="og:description" content="{{ page.excerpt }}" />
+  <meta property="og:description" content="{{ description }}" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:image" content="{{ site.url }}{{ site.image }}" />
   <meta property="og:type" content="website" />
 
   <!-- Twitter Cards -->
   <meta name="twitter:title" content="{{ page.title }}">
-  <meta name="twitter:description" content="{{ page.excerpt }}">
+  <meta name="twitter:description" content="{{ description }}">
   <meta name="twitter:site" content="@{{ site.twitter }}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="{{ site.url }}{{ site.image }}" />
