@@ -37,6 +37,15 @@ footer.site-footer {
       margin: 0 0 0 5px;
       line-height: 1em;
     }
+    @media (max-width: 500px) {
+      .illustration {
+        width: 160px;
+      }
+      h2 {
+        font-size: 2.2em;
+      }
+
+    }
   }
 
   .links-right {
