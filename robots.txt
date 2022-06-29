@@ -2,4 +2,6 @@
 ---
 {% assign hidden_pages = site.pages | where_exp: "page","page.robots == 'noindex'" %}User-agent: *{% for page in hidden_pages %}
 Disallow: {{ page.url }}{% endfor %}
+Disallow: https://www.croixhollow.com/en/contact
+Disallow: https://www.croixhollow.com/en/overview
 Sitemap: {{ site.url }}/sitemap.xml
