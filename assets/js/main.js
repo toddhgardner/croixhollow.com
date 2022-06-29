@@ -5,7 +5,7 @@
 (function bookingControl() {
 
   var bookingControlEl = document.querySelector('#js-booking-control');
-  if (!bookingControl) { return; }
+  if (!bookingControlEl) { return; }
 
   var checkInInput = bookingControlEl.querySelector('[name=check_in]');
   var checkOutInput = bookingControlEl.querySelector('[name=check_out]');
