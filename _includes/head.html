@@ -1,5 +1,6 @@
 <head>
-  {% capture description %}{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | escape | truncate: 160 }}{% else %}{{ site.description | strip_html | strip_newlines | escape | truncate: 160 }}{% endif %}{% endcapture %}
+  {% capture description %}{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | escape | truncate: 160
+  }}{% else %}{{ site.description | strip_html | strip_newlines | escape | truncate: 160 }}{% endif %}{% endcapture %}
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,23 +10,17 @@
 
   <title>{{ page.title }} | {{ description }}</title>
   <meta name="description" content="{{ description }}">
-  {% if page.robots == 'noindex' %}<meta name="robots" content="noindex">{% endif %}
+  {% if page.robots == 'noindex' %}
+  <meta name="robots" content="noindex">{% endif %}
 
   <!-- Facebook Meta -->
   <meta property="og:title" content="{{ page.title }}" />
-  <meta property="og:site_name" content="{{ site.title }}"/>
+  <meta property="og:site_name" content="{{ site.title }}" />
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
   <meta property="og:description" content="{{ description }}" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:image" content="{{ site.url }}{{ site.image }}" />
   <meta property="og:type" content="website" />
-
-  <!-- Twitter Cards -->
-  <meta name="twitter:title" content="{{ page.title }}">
-  <meta name="twitter:description" content="{{ description }}">
-  <meta name="twitter:site" content="@{{ site.twitter }}">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="{{ site.url }}/assets/images/share.twitter.jpg" />
 
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
@@ -39,5 +34,6 @@
   <!-- Preloading -->
   <link rel="preload" href="/assets/fonts/wilderness-bold.woff2" as="font" type="font/woff2" crossorigin>
 
-  <link rel="stylesheet" href="/assets/css/main.css{% if jekyll.environment == 'production' %}?{{ site.time | date: "%s%N" }}{% endif %}">
+  <link rel="stylesheet" href="/assets/css/main.css{% if jekyll.environment == 'production' %}?{{ site.time | date: "
+    %s%N" }}{% endif %}">
 </head>
